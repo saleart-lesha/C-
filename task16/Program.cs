@@ -19,14 +19,16 @@
 //     Console.Write("Нет");
 // }
 
+// int number = Convert.ToDouble(Console.ReadLine());
 
-string username = Console.ReadLine();
-if(username == "Alexey")
-{
-    Console.Write("Ура, это же Alexey!");
-}
-else
-{
-    Console.Write("Привет, ");
-    Console.Write(username);
-}
+
+// string username = Console.ReadLine();
+// if(username == "Alexey")
+// {
+//     Console.Write("Ура, это же Alexey!");
+// }
+// else
+// {
+//     Console.Write("Привет, ");
+//     Console.Write(username);
+// }

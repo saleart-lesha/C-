@@ -1,8 +1,20 @@
 ﻿Console.Write("Введите число: ");
-int N = Convert.ToInt32(Console.ReadLine());
-int temp = 1;
-while(temp <= N && N % 2 == 0)
+int number = Convert.ToInt32(Console.ReadLine());
+int check = number % 2;
+int temp = 2;
+
+if (check == 0)
 {
+    while(temp < number)
+    {
     Console.Write($"{temp} ");
-    temp++;// temp = temp + 1
+    temp = temp + 2;
+    }
+} else
+{
+while(temp < number)
+    {
+    Console.Write($"{temp} ");
+    temp = temp + 2;
+    }
 }
