@@ -10,7 +10,7 @@ Console.Write("Введите второе число: ");
 int number2 = Convert.ToInt32(Console.ReadLine());
 
 int mod = number1 % number2;
-if(mod == 0)
+if (mod == 0)
 {
     Console.Write("Кратно");
 }

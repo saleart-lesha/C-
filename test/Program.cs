@@ -1,20 +1,18 @@
-﻿Console.Write("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-int check = number % 2;
-int temp = 2;
-
-if (check == 0)
-{
-    while(temp < number)
-    {
-    Console.Write($"{temp} ");
-    temp = temp + 2;
-    }
-} else
-{
-while(temp < number)
-    {
-    Console.Write($"{temp} ");
-    temp = temp + 2;
-    }
-}
+﻿Console.Write("Введите пятизначное число: ");
+        int number = Convert.ToInt32(Console.ReadLine());
+        
+        string str = number.ToString();
+        bool isPalindrome = true;
+        
+        for (int i = 0; i < str.Length / 2; i++) {
+            if (str[i] != str[str.Length - i - 1]) {
+                isPalindrome = false;
+                break;
+            }
+        }
+        
+        if (isPalindrome) {
+            Console.WriteLine("Число является палиндромом.");
+        } else {
+            Console.WriteLine("Число не является палиндромом.");
+        }

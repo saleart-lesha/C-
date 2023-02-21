@@ -19,6 +19,7 @@ bool Checked(int quater)
         return false;
     }
 }
+
 string[] quaters ={"x > 0; y > 0", "x < 0; y > 0", "x < 0; y < 0", "x > 0; y < 0"};
 
 int quater = Promt("Введите четверть: ");
