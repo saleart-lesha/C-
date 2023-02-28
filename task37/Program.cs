@@ -27,8 +27,10 @@ for (int i = 0; i < array.Length / 2; i++)
 {
     newArray[i] = array[i] * array[array.Length - 1 - i];
 }
+
 if(array.Length % 2 > 0)
 {
     newArray[newArray.Length - 1] = array[array.Length/2];
 }
 System.Console.WriteLine(string.Join(", ", newArray));
+
